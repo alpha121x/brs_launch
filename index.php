@@ -366,11 +366,11 @@
             </a>
 
             <a href="#" target="_blank">
-                <img src="public/brs_logo.jpeg" class="company-logo" id="logo2" />
+                <img src="public/brs_logo.png" class="company-logo" id="logo2" />
             </a>
 
             <a href="#" target="_blank">
-                <img src="public/highway_logo.jpg" class="company-logo" id="logo2" />
+                <img src="public/highway_logo.png" class="company-logo" id="logo2" />
             </a>
 
             <a href="#" target="_blank">
@@ -381,7 +381,7 @@
 
 
         <div class="success-message" id="successMessage">
-            <p>The Manuals System is lived now!</p>
+            <p>The BRS System is lived now!</p>
         </div>
     </div>
 
@@ -413,15 +413,15 @@
 
                 // Redirect after 2 seconds
                 setTimeout(() => {
-                    window.location.href = "https://ict.urbanunit.gov.pk/rams_manuals/manuals.php"; // <<< Change link here
-                }, 2000);
+                    window.location.href = "http://cnw.urbanunit.gov.pk/cnw_brs/"; // <<< Change link here
+                }, 20000);
 
-            }, 6000);
+            }, 15000);
 
         }
 
         function fireConfetti() {
-            const duration = 3 * 1000; // Duration: 3 seconds
+           const duration = 12 * 1000;
             const animationEnd = Date.now() + duration;
 
             const defaults = {
