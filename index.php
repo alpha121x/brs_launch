@@ -365,9 +365,13 @@
                 <img src="public/uu_logo.png" class="company-logo" id="logo1" />
             </a>
 
-            <!-- <a href="https://urbanunit.gov.pk/" target="_blank">
-                <img src="public/jica-logo.png" class="company-logo" id="logo2" />
-            </a> -->
+            <a href="#" target="_blank">
+                <img src="public/brs_logo.jpeg" class="company-logo" id="logo2" />
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="public/highway_logo.jpg" class="company-logo" id="logo2" />
+            </a>
 
             <a href="#" target="_blank">
                 <img src="public/cnw.png" class="company-logo" id="logo3" />
