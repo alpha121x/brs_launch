@@ -421,73 +421,83 @@
         }
 
         function fireConfetti() {
-           const duration = 12 * 1000;
+            const duration = 12 * 1000;
             const animationEnd = Date.now() + duration;
 
             const defaults = {
-                spread: 70,
-                ticks: 60,
+                spread: 80,
+                ticks: 80,
                 gravity: 0.6
             };
 
             const interval = setInterval(() => {
                 const timeLeft = animationEnd - Date.now();
-
                 if (timeLeft <= 0) {
-                    return clearInterval(interval);
+                    clearInterval(interval);
+                    return;
                 }
 
-                // Top Left, Center, Right
-                confetti(Object.assign({}, defaults, {
-                    particleCount: 80,
-                    origin: {
-                        x: 0,
-                        y: 0.1
-                    } // top-left
-                }));
-                confetti(Object.assign({}, defaults, {
-                    particleCount: 80,
-                    origin: {
-                        x: 0.5,
-                        y: 0.1
-                    } // top-center
-                }));
-                confetti(Object.assign({}, defaults, {
-                    particleCount: 80,
-                    origin: {
-                        x: 1,
-                        y: 0.1
-                    } // top-right
-                }));
+                // scale particles down near the end for smooth finish
+                const particleCount = Math.floor(180 * (timeLeft / duration));
 
-                // Bottom Left, Center, Right (inverted upward by negative gravity)
-                confetti(Object.assign({}, defaults, {
-                    particleCount: 80,
-                    gravity: -0.6,
+                // Top
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    origin: {
+                        x: 0,
+                        y: 0.1
+                    }
+                });
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    origin: {
+                        x: 0.5,
+                        y: 0.1
+                    }
+                });
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    origin: {
+                        x: 1,
+                        y: 0.1
+                    }
+                });
+
+                // Bottom (upward)
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    gravity: -0.7,
                     origin: {
                         x: 0,
                         y: 0.9
-                    } // bottom-left
-                }));
-                confetti(Object.assign({}, defaults, {
-                    particleCount: 80,
-                    gravity: -0.6,
+                    }
+                });
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    gravity: -0.7,
                     origin: {
                         x: 0.5,
                         y: 0.9
-                    } // bottom-center
-                }));
-                confetti(Object.assign({}, defaults, {
-                    particleCount: 80,
-                    gravity: -0.6,
+                    }
+                });
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    gravity: -0.7,
                     origin: {
                         x: 1,
                         y: 0.9
-                    } // bottom-right
-                }));
+                    }
+                });
 
             }, 250);
         }
+
 
 
 
