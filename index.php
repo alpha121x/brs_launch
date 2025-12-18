@@ -10,7 +10,7 @@
     <link rel="icon" href="public/gop_favicon.png" type="image/x-icon">
 
 
-    <title>Rams-Manuals - Digital Publication</title>
+    <title>BRS - Inaugration</title>
 
     <!-- Confetti CDN -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -352,8 +352,8 @@
 
 <body>
     <div class="card">
-        <h1 class="main-title">C&W Road Asset Management Manuals</h1>
-        <p class="sub-title">Digital Publication</p>
+        <h1 class="main-title">Building Research Station (BRS)</h1>
+        <p class="sub-title">Inaugration</p>
 
 
         <div class="button-wrapper">
@@ -362,19 +362,15 @@
 
         <div class="logo-wrapper d-flex align-items-center gap-2">
             <a href="https://urbanunit.gov.pk/" target="_blank">
-                <img src="public/rams.png" class="company-logo" id="logo1" />
+                <img src="public/uu_logo.png" class="company-logo" id="logo1" />
             </a>
 
-            <a href="https://urbanunit.gov.pk/" target="_blank">
+            <!-- <a href="https://urbanunit.gov.pk/" target="_blank">
                 <img src="public/jica-logo.png" class="company-logo" id="logo2" />
-            </a>
+            </a> -->
 
             <a href="#" target="_blank">
                 <img src="public/cnw.png" class="company-logo" id="logo3" />
-            </a>
-
-             <a href="#" target="_blank">
-                <img src="public/punjab.png" class="company-logo" id="logo4" />
             </a>
         </div>
 
