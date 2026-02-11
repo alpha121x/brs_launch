@@ -352,7 +352,7 @@
 
 <body>
     <div class="card">
-        <h1 class="main-title">Building Research Station (BRS)</h1>
+        <h1 class="main-title">Digitization Of Building Research Station (BRS)</h1>
         <p class="sub-title">Inaugration</p>
 
 
