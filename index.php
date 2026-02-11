@@ -381,7 +381,7 @@
 
 
         <div class="success-message" id="successMessage">
-            <p>The BRS System is lived now!</p>
+            <p>The BRS System is live now!</p>
         </div>
     </div>
 
