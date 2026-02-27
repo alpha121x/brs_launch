@@ -10,7 +10,7 @@
     <link rel="icon" href="public/gop_favicon.png" type="image/x-icon">
 
 
-    <title>BRS - Inaugration</title>
+    <title>Automation of Building & Road Research Labs - Inauguration</title>
 
     <!-- Confetti CDN -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -21,7 +21,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('public/brs.webp') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('public/bg2.png') no-repeat center center/cover;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
             animation: fadeIn 2s ease-in-out;
@@ -341,6 +341,14 @@
             margin-bottom: 2px;
         }
 
+        .tagline {
+            font-size: 16px;
+            font-style: italic;
+            color: #444;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
         .sub-title {
             font-size: 25px;
             font-style: italic;
@@ -352,8 +360,9 @@
 
 <body>
     <div class="card">
-        <h1 class="main-title">Digitization Of Building Research Station (BRS)</h1>
-        <p class="sub-title">Inaugration</p>
+        <h1 class="main-title">Automation of Building &amp; Road Research Labs</h1>
+        <p class="sub-title">Inauguration of Automation of Laboratory System at Building Research Station &amp; Road Research and Material Testing Institute</p>
+        <p class="tagline">Transforming Infrastructure Testing Through Digital Innovation</p>
 
 
         <div class="button-wrapper">
@@ -381,7 +390,7 @@
 
 
         <div class="success-message" id="successMessage">
-            <p>The BRS System is live now!</p>
+            <p>The Building Research Station & Road Research and Material Testing Institute Systems are now Live!</p>
         </div>
     </div>
 
@@ -412,9 +421,9 @@
                 fireConfetti();
 
                 // Redirect after 2 seconds
-                setTimeout(() => {
-                    window.location.href = "http://cnw.urbanunit.gov.pk/cnw_brs/"; // <<< Change link here
-                }, 20000);
+                // setTimeout(() => {
+                //     window.location.href = "http://cnw.urbanunit.gov.pk/cnw_brs/"; // <<< Change link here
+                // }, 20000);
 
             }, 15000);
 
